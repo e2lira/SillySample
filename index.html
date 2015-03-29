@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>DynamicInput Text</title>
+</head>
+<body>
+	<button id="silly">Do it</button>
+	<button id="clean">Clean</button>
+	<div id="results"></div>
+	
+	<script src="js/zepto.min.js"></script>
+	<script src="js/silly.js"></script>
+	<script>
+		$("#silly").click(function(){
+				 SILLY.DoIt($("#results"));
+			});	
+		$("#clean").click(function(){
+				 $("#results").html("");
+			});			
+			  </script>
+</body>
+</html>
